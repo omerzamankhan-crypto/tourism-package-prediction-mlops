@@ -10,7 +10,7 @@ df = pd.read_csv("tourism_project/data/tourism.csv")   # complete the code: path
 # complete the code: drop the customer identifier column, it is not a predictive feature
 
 columns_to_drop = [column for column in ["Unnamed: 0", "CustomerID"] if column in df.columns]
-df = df.drop(columns=columns_to_drop, inplace=True)
+df = df.drop(columns=columns_to_drop)
 
 # Standardize inconsistent category labels found in the source data.
 df["Gender"] = df["Gender"].replace({"Fe Male": "Female"})
