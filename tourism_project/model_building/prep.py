@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 
 df = pd.read_csv("tourism_project/data/tourism.csv")   # complete the code: path to the registered tourism.csv inside the data folder
 
-#df.drop(columns=[_______], inplace=True)   
+#df.drop(columns=[_______], inplace=True)
 # complete the code: drop the customer identifier column, it is not a predictive feature
 
 columns_to_drop = [column for column in ["Unnamed: 0", "CustomerID"] if column in df.columns]
